@@ -1,9 +1,8 @@
-import java.util.Random;
-import java.util.Scanner;
-import java.util.Formatter;
 
-public class ControlFlowExercises {
-    public static void main(String[] args) {
+import java.util.Scanner;
+
+    public class ControlFlowExercises {
+    public static void main(String[] args, Scanner input) {
 
 
 //       1a. loops Basic
@@ -31,8 +30,8 @@ public class ControlFlowExercises {
 //                System.out.println("Count is: " + counter);
 //                --counter;
 //            } while (counter >= -10);
-
-
+//
+//
 //                long counter = 2;
 //                do {
 //                    counter *= counter;
@@ -55,44 +54,67 @@ public class ControlFlowExercises {
 //
 //
 
+//
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Enter a Number to start the Power Table....");
+//        int start = scan.nextInt();
+//
+//
+//        System.out.println(" Here  is your Power Table!\n");
+//        System.out.println("number  | squared | cubed");
+//        System.out.println("------  | ------- | -----");{
+//
+//            Formatter fmt;
+//
+//            for (int i = 1; i <= start; i++) {
+//                fmt = new Formatter();
+//
+//                fmt.format("%4d    |%4d     | %4d", i, i * i, i * i * i);
+//                System.out.println(fmt);
+//            }
+//
+//
+//        }
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter a Number to start the Power Table....");
-        int start = scan.nextInt();
+        Scanner sc = new Scanner((System.in));
+        String contChoice;
+
+        int getGrade = sc.nextInt();
 
 
-        System.out.println(" Here  is your Power Table!\n");
-        System.out.println("number  | squared | cubed");
-        System.out.println("------  | ------- | -----");
 
-            Formatter fmt;
+                System.out.println("Give me the grade");
+                int grade = input.nextInt();
+                input.nextLine();
 
-            for (int i = 1; i <= start; i++) {
-                fmt = new Formatter();
 
-                fmt.format("%4d    |%4d     | %4d", i, i * i, i * i * i);
-                System.out.println(fmt);
+                if (grade <= 100 && grade >= 88) {
+                    System.out.println("A");
+                } else if (grade <= 87 && grade >= 80) {
+                    System.out.println("B");
+                } else if (grade <= 79 && grade >= 67) {
+                    System.out.println("C");
+                } else if (grade <= 66 && grade >= 60) {
+                    System.out.println("D");
+                } else if (grade <= 59) {
+                    System.out.println("F");
+                }
+
+//
+//            System.out.println("Do you want to continue? y/n");
+//            String option = input.nextLine();
+//
+//
+//            if(!option.equalsIgnoreCase("y")){
+//                System.out.println("Ok, good bye");
+//                break;
+//            }
+//
+//
+//
+//
+//
             }
-        System.out.println("Do you want to continue? y/n");
-            String option = scan.nextLine();
 
-
-        if(!option.equalsIgnoreCase("y")) {
-            System.out.println("Ok, good bye");
 
         }
-
-
-
-//        int  getGrade = scan.nextInt();
-//        for (int i = 100; i >= 0; i--) {
-//            System.out.println(i + " =  :" + getGrade (i));
-        }
-        }
-
-
-
-
-
-
-
