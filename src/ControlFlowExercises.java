@@ -73,6 +73,15 @@ public class ControlFlowExercises {
                 fmt.format("%4d    |%4d     | %4d", i, i * i, i * i * i);
                 System.out.println(fmt);
             }
+        System.out.println("Do you want to continue? y/n");
+            String option = scan.nextLine();
+
+
+        if(!option.equalsIgnoreCase("y")) {
+            System.out.println("Ok, good bye");
+
+        }
+
 
 
 //        int  getGrade = scan.nextInt();
