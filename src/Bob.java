@@ -1,20 +1,33 @@
+
 import java.util.Scanner;
-
 public class Bob {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        String response1 = "Sure";
-        String response2 = "Whoa,chill the stank out!!!";
-        String response3 = "Fine. Be that way!!!";
-        String response4 = "Whatever....";
+    public static void main(String[] args) {
+
+        while (true) {
+
+            System.out.print("Ask Bob anything...");
+            Scanner scan = new Scanner(System.in);
+            String msg = scan.nextLine();
+            boolean isQuestion = msg.endsWith("?");
+            boolean isShouting = msg.equals(msg.toUpperCase()) || msg.endsWith("!");
+            boolean isSilence = msg.trim().isEmpty();
 
 
-        System.out.println("Are you going to clean your room? " + response1 );
-        System.out.println("Hey Bob! Didn't I tell you to cut the grass?!!  " + response2 );
-        System.out.println("Hmmm..." + response3 );
-        System.out.println("Get youself out there and cut the grass, and I will be watching your lazy behind..." + response4 );
+            {
 
+            {
+                if (isQuestion) {
+                    System.out.println("Sure");
 
+                } else if (isShouting) {
+                    System.out.println("Whoa, chill out!");
 
+                } else if (isSilence) {
+                    System.out.println("Fine. Be that way!");
+
+                } else {
+                    System.out.println( "Whatever");
+                }
+            }
     }
-}
+            }}}

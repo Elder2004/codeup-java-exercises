@@ -3,7 +3,8 @@ public class StringExercise {
 
 
 
-       String message = "We don't need no education " + "We don't need no thought control";
+       String message = "We don't need no education\n";
+       message += "We don't need no thought control";
 
         message += " Check \"this\" out!, \"s inside of \"s!\n";
 
